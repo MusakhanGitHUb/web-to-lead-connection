@@ -3,7 +3,7 @@ let cahtchaChecked = false;
 
 
 function beforeinsert(event){
-    if(cahtchaChecked === true){
+    if(cahtchaChecked){
   
         let outputdata = document.querySelector('.outputdata');
         let inputvalue= document.querySelector('.inputdata')
