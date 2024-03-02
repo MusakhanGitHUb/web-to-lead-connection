@@ -1,12 +1,19 @@
 console.log('web to lead')
+let capthacheacked=false;
 
-function beforeinsert(){
-    let outputdata = document.querySelector('.outputdata');
-    let inputvalue= document.querySelector('.inputdata')
-    console.log('inputvalue',inputvalue.value)
-   const formatdDate= new Date(inputvalue.value).toLocaleDateString("en-AG");
-   outputdata.value=formatdDate;
-  
+function beforeinsert(event){
+    if(capthacheacked){
+        let outputdata = document.querySelector('.outputdata');
+        let inputvalue= document.querySelector('.inputdata')
+        console.log('inputvalue',inputvalue.value)
+       const formatdDate= new Date(inputvalue.value).toLocaleDateString("en-AG");
+       outputdata.value=formatdDate;
+
+    }else{
+        alert(' Please check reCAPTCHA to submit the lead')
+        event.preventDefault();
+    }
+   
 
 
 }
@@ -16,3 +23,10 @@ function timestamp() {
      if (response == null || response.value.trim() == "") {
         var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());
         document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+
+
+   
+     function   recaptchafunc(){
+        capthacheacked=true;
+
+        }
