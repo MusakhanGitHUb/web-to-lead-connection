@@ -2,7 +2,7 @@ console.log('web to lead')
 let capthacheacked=false;
 
 function beforeinsert(event){
-    if(capthacheacked){
+    if(capthacheacked === true){
         let outputdata = document.querySelector('.outputdata');
         let inputvalue= document.querySelector('.inputdata')
         console.log('inputvalue',inputvalue.value)

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="website icon" type="png" href="webIcon.png">
     <title>Web to lead</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +16,7 @@
     
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D8d000009qHjQ" 
     method="POST"
-    onsubmit="beforeinsert()" >
+    onsubmit="beforeinsert(event)" >
     <input type=hidden name='captcha_settings' value='{"keyname":"webtoleadconnectoin","fallback":"true","orgId":"00D8d000009qHjQ","ts":""}'>
     
     <input type=hidden name="oid" value="00D8d000009qHjQ">
@@ -36,7 +37,7 @@
         <input class="btn"  type="submit" name="submit">
     </div>
     <div class="g-recaptcha"
-    data-callback="recaptchafunc(event)"
+    data-callback="recaptchafunc()"
 
      data-sitekey="6LfOA4cpAAAAAHJ0UV1Vn_DQcmhXgG7wFr8k7OdF"></div><br>
     
