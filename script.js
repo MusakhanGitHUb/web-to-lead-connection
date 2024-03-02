@@ -31,8 +31,8 @@ function timestamp() {
         
        
 
-       void function captchaSucces(){
-            this.cahtchaChecked=true;
+        function captchaSucces(){
+            cahtchaChecked=true;
 
         }
      
