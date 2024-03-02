@@ -28,9 +28,11 @@ function timestamp() {
         document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } 
         setInterval(timestamp, 500);
 
+        
+       
 
-        function captchaSucces(){
-            cahtchaChecked=true;
+       void function captchaSucces(){
+            this.cahtchaChecked=true;
 
         }
      
