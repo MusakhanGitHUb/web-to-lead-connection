@@ -10,7 +10,8 @@ function beforeinsert(event){
        outputdata.value=formatdDate;
 
     }else{
-        alert(' Please check reCAPTCHA to submit the lead')
+       
+        window.alert(' Please check reCAPTCHA to submit the lead ')
         event.preventDefault();
     }
    
