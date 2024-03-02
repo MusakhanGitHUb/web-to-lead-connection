@@ -2,7 +2,7 @@ console.log('web to lead')
 let capthacheacked=false;
 
 function beforeinsert(event){
-    if(capthacheacked === true){
+    if(capthacheacked){
         let outputdata = document.querySelector('.outputdata');
         let inputvalue= document.querySelector('.inputdata')
         console.log('inputvalue',inputvalue.value)
@@ -27,7 +27,7 @@ function timestamp() {
 
 
    
-     function   recaptchafunc(){
+     function recaptchafunc(){
         capthacheacked=true;
 
         }
