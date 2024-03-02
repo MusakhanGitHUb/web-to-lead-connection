@@ -30,8 +30,7 @@ function timestamp() {
 
 
         function captchaSucces(){
-
-            cahtchaChecked = true;
+            cahtchaChecked=true;
 
         }
      
