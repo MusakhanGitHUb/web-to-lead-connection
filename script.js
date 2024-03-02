@@ -3,7 +3,7 @@ let cahtchaChecked = false;
 
 
 function beforeinsert(event){
-    if(cahtchaChecked){
+    if(cahtchaChecked === true){
   
         let outputdata = document.querySelector('.outputdata');
         let inputvalue= document.querySelector('.inputdata')
@@ -32,7 +32,7 @@ function timestamp() {
        
 
         function captchaSucces(){
-            cahtchaChecked=true;
+            cahtchaChecked = true;
 
         }
      
