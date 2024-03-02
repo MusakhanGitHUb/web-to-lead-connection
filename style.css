@@ -37,3 +37,13 @@ form{
     border-radius: 4px;
 
 }
+.g-recaptcha{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
